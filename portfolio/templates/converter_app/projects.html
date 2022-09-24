@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block content %}
+    <h2> Here are my projects (some of them have private GitHub repo):</h2>
+    <br><br>
+    {% for project in projects %}
+        <div class="project">
+            <h3 class="project-name"><a  href="{{ project.link }}"> {{ project.name }}</a></h3>
+            <br>
+            <p class="description">{{ project.description }}</p>
+        </div>
+        <br>
+        <br>
+    {% endfor %}
+
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+    <h2> contacts!!</h2>
+    <div class="row">
+        <div class="column">
+            <a href="https://t.me/yeawouu"> <img class="contact-logo" src="{% static 'img/telegram.webp' %}" alt="telegram" style="width: 100%"></a>
+        </div>
+        <div class="column">
+            <a href="https://github.com/SokolOFFF"> <img class="contact-logo" src="{% static 'img/github.png' %}" alt="github" style="width: 100%"></a>
+        </div>
+        <div class="column">
+            <a href="https://vk.com/yeawou"> <img class="contact-logo" src="{% static 'img/vk.png' %}" alt="vk" style="width: 100%"></a>
+        </div>
+    </div>
+{% endblock %}
